@@ -1,0 +1,89 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* Styling for the quiz header */
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for each question */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Style for labels (answers) */
+label {
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style for radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style for the submit button */
+#submitAnswer {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#submitAnswer:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the result text */
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Style for the next button (appears after correct answer) */
+button {
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}

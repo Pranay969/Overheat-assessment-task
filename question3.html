@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="question3.css">
+    <script src="question3.js" defer></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Question 3: Which is a renewable energy source?</h1>
+        <form id="quizForm">
+            <div class="question">
+                <label>
+                    <input type="radio" name="answer" value="Hydroelectrical">
+                    Hydroelectrical
+                </label>
+            </div>
+            <div class="question">
+                <label>
+                    <input type="radio" name="answer" value="Coal">
+                    Coal
+                </label>
+            </div>
+            <div class="question">
+                <label>
+                    <input type="radio" name="answer" value="Nuclear">
+                    Nuclear
+                </label>
+            </div>
+            <div class="question">
+                <label>
+                    <input type="radio" name="answer" value="fossil fuel">
+                    Fossil fuel
+                </label>
+            </div>
+            <button type="button" id="submitAnswer">Submit Answer</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        document.getElementById('submitAnswer').addEventListener('click', function() {
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            const resultElement = document.getElementById('result');
+
+            if (selectedAnswer) {
+                // Check if the answer is correct
+                if (selectedAnswer.value === 'Hydroelectrical') {
+                    // Redirect to the Levels page
+                    window.location.href = 'level1done.html'; // Link to levels page
+                } else {
+                    resultElement.textContent = 'Incorrect! Please try again.';
+                }
+            } else {
+                resultElement.textContent = 'Please select an answer.';
+            }
+        });
+    </script>
+</body>
+</html>
